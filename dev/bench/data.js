@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1605956614874,
+  "lastUpdate": 1606502231969,
   "repoUrl": "https://github.com/nylonicious/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -189,6 +189,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 598,
             "range": "± 23",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rajiv.chauhan@gmail.com",
+            "name": "Rajiv Chauhan",
+            "username": "chauhraj"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5e406a7a47699d93fa2a77fb72553600cb7abd0f",
+          "message": "macros: fix outdated documentation (#3180)\n\n1. Changed 0.2 to 0.3\r\n2. Changed ‘multi’ to ‘single’ to indicate that the behavior is single threaded",
+          "timestamp": "2020-11-26T19:46:15+01:00",
+          "tree_id": "ac6898684e4b84e4a5d0e781adf42d950bbc9e43",
+          "url": "https://github.com/nylonicious/tokio/commit/5e406a7a47699d93fa2a77fb72553600cb7abd0f"
+        },
+        "date": 1606502231207,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 907,
+            "range": "± 233",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14303,
+            "range": "± 4749",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 925,
+            "range": "± 213",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13742,
+            "range": "± 3823",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 543,
+            "range": "± 114",
             "unit": "ns/iter"
           }
         ]
