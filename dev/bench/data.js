@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606502231969,
+  "lastUpdate": 1606502245552,
   "repoUrl": "https://github.com/nylonicious/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -47,6 +47,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19237626,
             "range": "± 2419296",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rajiv.chauhan@gmail.com",
+            "name": "Rajiv Chauhan",
+            "username": "chauhraj"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5e406a7a47699d93fa2a77fb72553600cb7abd0f",
+          "message": "macros: fix outdated documentation (#3180)\n\n1. Changed 0.2 to 0.3\r\n2. Changed ‘multi’ to ‘single’ to indicate that the behavior is single threaded",
+          "timestamp": "2020-11-26T19:46:15+01:00",
+          "tree_id": "ac6898684e4b84e4a5d0e781adf42d950bbc9e43",
+          "url": "https://github.com/nylonicious/tokio/commit/5e406a7a47699d93fa2a77fb72553600cb7abd0f"
+        },
+        "date": 1606502244143,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 214468,
+            "range": "± 48918",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 735159,
+            "range": "± 152399",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5091804,
+            "range": "± 1505862",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20648847,
+            "range": "± 2611059",
             "unit": "ns/iter"
           }
         ]
