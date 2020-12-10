@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607624831043,
+  "lastUpdate": 1607624880697,
   "repoUrl": "https://github.com/nylonicious/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -709,6 +709,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 684563,
             "range": "± 2103",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "yusuktan@maguro.dev",
+            "name": "Yusuke Tanaka",
+            "username": "magurotuna"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4b1d76ec8f35052480eb14204d147df658bfdfdd",
+          "message": "docs: fix typo in signal module documentation (#3249)",
+          "timestamp": "2020-12-10T08:11:45-08:00",
+          "tree_id": "46efd6f41cfaf702fb40c62b89800c511309d584",
+          "url": "https://github.com/nylonicious/tokio/commit/4b1d76ec8f35052480eb14204d147df658bfdfdd"
+        },
+        "date": 1607624879242,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6619075,
+            "range": "± 1686431",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6877247,
+            "range": "± 1661766",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5965796,
+            "range": "± 2341153",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 711,
+            "range": "± 136",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 677,
+            "range": "± 133",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 667,
+            "range": "± 139",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 54146,
+            "range": "± 6019",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 980,
+            "range": "± 432",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1119452,
+            "range": "± 84930",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 816805,
+            "range": "± 94851",
             "unit": "ns/iter"
           }
         ]
