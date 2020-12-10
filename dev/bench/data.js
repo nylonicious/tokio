@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607624791851,
+  "lastUpdate": 1607624795386,
   "repoUrl": "https://github.com/nylonicious/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -239,6 +239,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18035690,
             "range": "± 2323829",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "yusuktan@maguro.dev",
+            "name": "Yusuke Tanaka",
+            "username": "magurotuna"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4b1d76ec8f35052480eb14204d147df658bfdfdd",
+          "message": "docs: fix typo in signal module documentation (#3249)",
+          "timestamp": "2020-12-10T08:11:45-08:00",
+          "tree_id": "46efd6f41cfaf702fb40c62b89800c511309d584",
+          "url": "https://github.com/nylonicious/tokio/commit/4b1d76ec8f35052480eb14204d147df658bfdfdd"
+        },
+        "date": 1607624791583,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 158570,
+            "range": "± 10917",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 642808,
+            "range": "± 46952",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4897864,
+            "range": "± 468505",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18756075,
+            "range": "± 2815075",
             "unit": "ns/iter"
           }
         ]
