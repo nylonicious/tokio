@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607560742826,
+  "lastUpdate": 1607560747870,
   "repoUrl": "https://github.com/nylonicious/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -529,6 +529,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 772726,
             "range": "± 69834",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "50183564+nylonicious@users.noreply.github.com",
+            "name": "Nylonicious",
+            "username": "nylonicious"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "52cd240053b2e1dd5835186539f563c3496dfd7d",
+          "message": "task: add missing feature flags for task_local and spawn_blocking (#3237)",
+          "timestamp": "2020-12-09T23:49:28+01:00",
+          "tree_id": "bbc90b40091bd716d0269b84da2bafb32288b149",
+          "url": "https://github.com/nylonicious/tokio/commit/52cd240053b2e1dd5835186539f563c3496dfd7d"
+        },
+        "date": 1607560743453,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 5764114,
+            "range": "± 2337019",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 5559170,
+            "range": "± 1130546",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5069796,
+            "range": "± 1869146",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 517,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 513,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 505,
+            "range": "± 11",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 44436,
+            "range": "± 1115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 753,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 954867,
+            "range": "± 1351",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 684563,
+            "range": "± 2103",
             "unit": "ns/iter"
           }
         ]
