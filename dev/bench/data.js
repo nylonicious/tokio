@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608268223729,
+  "lastUpdate": 1608268227942,
   "repoUrl": "https://github.com/nylonicious/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -335,6 +335,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18315163,
             "range": "± 1887723",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "abd4c0025539f142ec48a09e01430f7ee3b83214",
+          "message": "time: enforce `current_thread` rt for time::pause (#3289)\n\nPausing time is a capability added to assist with testing Tokio code\r\ndependent on time. Currently, the capability implicitly requires the\r\ncurrent_thread runtime.\r\n\r\nThis change enforces the requirement by panicking if called from a\r\nmulti-threaded runtime.",
+          "timestamp": "2020-12-17T15:37:08-08:00",
+          "tree_id": "6c565d6c74dff336ac847cb6463245283d8470d5",
+          "url": "https://github.com/nylonicious/tokio/commit/abd4c0025539f142ec48a09e01430f7ee3b83214"
+        },
+        "date": 1608268224153,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 198487,
+            "range": "± 56426",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 781149,
+            "range": "± 271765",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5540992,
+            "range": "± 664376",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21710124,
+            "range": "± 2481606",
             "unit": "ns/iter"
           }
         ]
