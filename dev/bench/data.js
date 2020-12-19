@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608415084886,
+  "lastUpdate": 1608415088551,
   "repoUrl": "https://github.com/nylonicious/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -2027,6 +2027,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1023,
             "range": "± 73",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "arve.knudsen@gmail.com",
+            "name": "Arve Knudsen",
+            "username": "aknuds1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1b70507894035e066cb488c14ff328bd47ca696d",
+          "message": "net: remove {Tcp,Unix}Stream::shutdown() (#3298)\n\n`shutdown()` on `AsyncWrite` performs a TCP shutdown. This avoids method\r\nconflicts.\r\n\r\nCloses #3294",
+          "timestamp": "2020-12-19T12:17:52-08:00",
+          "tree_id": "dd3c414761b8a3713b63515e7666f108a1391743",
+          "url": "https://github.com/nylonicious/tokio/commit/1b70507894035e066cb488c14ff328bd47ca696d"
+        },
+        "date": 1608415081015,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 17347,
+            "range": "± 9544",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1075,
+            "range": "± 123",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 646,
+            "range": "± 60",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 17010,
+            "range": "± 5078",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1101,
+            "range": "± 253",
             "unit": "ns/iter"
           }
         ]
