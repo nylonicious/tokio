@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608415088551,
+  "lastUpdate": 1608415102238,
   "repoUrl": "https://github.com/nylonicious/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -1105,6 +1105,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 737585,
             "range": "± 86475",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "arve.knudsen@gmail.com",
+            "name": "Arve Knudsen",
+            "username": "aknuds1"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1b70507894035e066cb488c14ff328bd47ca696d",
+          "message": "net: remove {Tcp,Unix}Stream::shutdown() (#3298)\n\n`shutdown()` on `AsyncWrite` performs a TCP shutdown. This avoids method\r\nconflicts.\r\n\r\nCloses #3294",
+          "timestamp": "2020-12-19T12:17:52-08:00",
+          "tree_id": "dd3c414761b8a3713b63515e7666f108a1391743",
+          "url": "https://github.com/nylonicious/tokio/commit/1b70507894035e066cb488c14ff328bd47ca696d"
+        },
+        "date": 1608415101470,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 5868327,
+            "range": "± 3047105",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 5661046,
+            "range": "± 1614116",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5380779,
+            "range": "± 2494695",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 677,
+            "range": "± 114",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 692,
+            "range": "± 134",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 664,
+            "range": "± 103",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 123603,
+            "range": "± 17069",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1461,
+            "range": "± 232",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 849628,
+            "range": "± 132407",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 627762,
+            "range": "± 246417",
             "unit": "ns/iter"
           }
         ]
