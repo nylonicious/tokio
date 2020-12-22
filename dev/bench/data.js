@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608627827054,
+  "lastUpdate": 1608627833978,
   "repoUrl": "https://github.com/nylonicious/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -431,6 +431,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18577744,
             "range": "± 1571267",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "564c943309f0a94474e2e71a115ec0bb45f3e7fd",
+          "message": "io: rename `AsyncFd::with_io()` and rm `with_poll()` (#3306)",
+          "timestamp": "2020-12-21T15:42:38-08:00",
+          "tree_id": "6f29310dda04438222fb9581b3cd9581f1abe13e",
+          "url": "https://github.com/nylonicious/tokio/commit/564c943309f0a94474e2e71a115ec0bb45f3e7fd"
+        },
+        "date": 1608627832676,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 180615,
+            "range": "± 21222",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 673133,
+            "range": "± 86565",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4895030,
+            "range": "± 735925",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17992919,
+            "range": "± 2424252",
             "unit": "ns/iter"
           }
         ]
