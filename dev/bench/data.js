@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608778582135,
+  "lastUpdate": 1608879781313,
   "repoUrl": "https://github.com/nylonicious/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -2049,6 +2049,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 488,
             "range": "± 6",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lnicola@users.noreply.github.com",
+            "name": "Laurențiu Nicola",
+            "username": "lnicola"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1eefbc250ad49d9086bdb2b8be4404bd445f63fb",
+          "message": "docs: remove stream feature from docs (#3335)",
+          "timestamp": "2020-12-24T23:17:18+09:00",
+          "tree_id": "f3657463c2d44548e4d71f8454ce672ffeb0b45f",
+          "url": "https://github.com/nylonicious/tokio/commit/1eefbc250ad49d9086bdb2b8be4404bd445f63fb"
+        },
+        "date": 1608879779967,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 905,
+            "range": "± 81",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14415,
+            "range": "± 3975",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 982,
+            "range": "± 136",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14041,
+            "range": "± 5209",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 529,
+            "range": "± 66",
             "unit": "ns/iter"
           }
         ]
