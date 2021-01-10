@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610245098563,
+  "lastUpdate": 1610296657203,
   "repoUrl": "https://github.com/nylonicious/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -623,6 +623,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18498089,
             "range": "± 2245571",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "32036912+shantanu28sharma@users.noreply.github.com",
+            "name": "Shantanu Sharma",
+            "username": "shantanu28sharma"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0b8bdf9d32e4add38a3c53f86e7be70782c0170d",
+          "message": "runtime: fix typo (#3385)",
+          "timestamp": "2021-01-10T20:59:14+09:00",
+          "tree_id": "b84caf48e53a4becde18694f95ab01f967ded89b",
+          "url": "https://github.com/nylonicious/tokio/commit/0b8bdf9d32e4add38a3c53f86e7be70782c0170d"
+        },
+        "date": 1610296656414,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 156496,
+            "range": "± 4596",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 611702,
+            "range": "± 23483",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4719013,
+            "range": "± 787169",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17749307,
+            "range": "± 3152388",
             "unit": "ns/iter"
           }
         ]
