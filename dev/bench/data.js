@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610245059755,
+  "lastUpdate": 1610245063572,
   "repoUrl": "https://github.com/nylonicious/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -575,6 +575,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21996365,
             "range": "± 2777968",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "51a7082d135f52f5fe87ddd9ccc09d4d2a401dd4",
+          "message": "docs: test-util feature is not enabled with full (#3397)",
+          "timestamp": "2021-01-09T14:01:10+01:00",
+          "tree_id": "3ff2c0507f86f3ecc1f5387b95318634bcd5fd12",
+          "url": "https://github.com/nylonicious/tokio/commit/51a7082d135f52f5fe87ddd9ccc09d4d2a401dd4"
+        },
+        "date": 1610245059546,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 156015,
+            "range": "± 5568",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 613675,
+            "range": "± 35628",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4848593,
+            "range": "± 1165752",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18498089,
+            "range": "± 2245571",
             "unit": "ns/iter"
           }
         ]
